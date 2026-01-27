@@ -1,19 +1,22 @@
-# C-digo_de_Conduta_Uso_Respons-vel_da_Inteligente_Artificial.py
-Esse projeto fala de consultas de como usar a Inteligência Artificial 
+# Code of Conduct for Responsible Use of Artificial Intelligence.py
+
+This project discusses queries on how to use Artificial Intelligence.
 
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-codigo_de_conduta_ia.py
+code_of_conduct_ia.py
 
-Versão em Python do "Código de Conduta — Uso Responsável de Inteligência Artificial".
-Fornece o texto do código de conduta em formatos plaintext e Markdown, funções utilitárias
-para exibir e salvar em arquivo, e uma interface de linha de comando simples.
+Python version of the "Code of Conduct — Responsible Use of Artificial Intelligence".
+Provides the code of conduct text in plaintext and Markdown formats, utility functions
+to display and save to a file, and a simple command-line interface.
 
-Uso:
-    python codigo_de_conduta_ia.py --print            # Imprime o texto em plain text no console
-    python codigo_de_conduta_ia.py --format md --output codigo.md
-    python codigo_de_conduta_ia.py --format txt --output codigo.txt
+Usage:
+
+python code_of_conduct_ia.py --print # Prints the text in plain text to the console
+python code_of_conduct_ia.py --format md --output code.md
+
+python code_of_conduct_ia.py --format txt --output code.txt
 """
 
 from __future__ import annotations
@@ -23,145 +26,185 @@ from pathlib import Path
 from typing import Optional
 
 # ---------------------------------------------------------------------------
-# Conteúdo do Código de Conduta (em português)
+# Code of Conduct Content (in Portuguese)
 # ---------------------------------------------------------------------------
 
-_TITLE = "Código de Conduta — Uso Responsável de Inteligência Artificial"
+_TITLE = "Code of Conduct — Responsible Use of Artificial Intelligence"
 
 _MARKDOWN = f"""# {_TITLE}
 
-**Objetivo**  
-Promover o uso seguro, ético e transparente de sistemas de inteligência artificial (IA), protegendo a dignidade, privacidade e direitos das pessoas afetadas.
+**Objective** 
+To promote the safe, ethical, and transparent use of artificial intelligence (AI) systems, protecting the dignity, privacy, and rights of the people affected.
 
-## Princípios fundamentais
-- Respeito à dignidade humana
-- Não causar dano
-- Transparência e honestidade
-- Responsabilidade humana
-- Justiça e não discriminação
+## Fundamental Principles
+- Respect for human dignity
+- Do no harm
+- Transparency and honesty
+- Human responsibility
+- Justice and non-discrimination
 
-## Regras essenciais (resumo)
-1. **Identificação:** Sempre deixe claro quando algo foi gerado ou decidido por IA.  
-2. **Consentimento:** Colete e use dados pessoais somente com objetivo legítimo e consentimento informado.  
-3. **Privacidade:** Minimize dados, proteja-os e cumpra leis de proteção de dados.  
-4. **Não discriminar:** Teste e mitigue vieses; não use IA para decisões que perpetuem desigualdades.  
-5. **Supervisão:** Mantenha supervisão humana para decisões que afetem direitos, segurança ou bem‑estar.  
-6. **Explicabilidade:** Forneça explicações compreensíveis quando a IA produzir decisões que impactem pessoas.  
-7. **Segurança:** Teste sistemas para evitar falhas e ataques; atualize e corrija vulnerabilidades.  
-8. **Proibição de uso malicioso:** Não criar ou distribuir deepfakes, desinformação, manipulação eleitoral ou qualquer uso enganoso.  
-9. **Propriedade intelectual:** Respeite direitos autorais e atribua fontes quando aplicável.  
-10. **Impacto e sustentabilidade:** Considere consequências sociais e ambientais; minimize impacto negativo.  
+## Essential Rules (summary)
+1. **Identification:** Always make it clear when something was generated or decided by AI.
 
-## Procedimento ao identificar dano ou risco
-- Pausar o sistema afetado quando possível.  
-- Registrar evidências e comunicar imediatamente aos responsáveis.  
-- Oferecer apoio às pessoas prejudicadas e executar correções e mitigação.  
-- Revisar processos para evitar recorrência.
+2. **Consent:** Collect and use personal data only for legitimate purposes and Informed consent.
 
-## Responsabilidades dos usuários e desenvolvedores
-- **Usuários:** Usar ferramentas de IA conforme indicado, reportar problemas e respeitar limites de privacidade.  
-- **Desenvolvedores/Operadores:** Garantir testes, mitigação de vieses, controles de acesso, monitoramento contínuo e documentação das decisões do sistema.
+3. **Privacy:** Minimize data, protect it, and comply with data protection laws.
 
-## Mecanismo de denúncia e recurso
-- Disponibilizar canal claro para reclamações e solicitações de revisão humana de decisões automatizadas.  
-- Garantir prazo e procedimento para resposta e correção.
+4. **Non-discrimination:** Test for and mitigate biases; do not use AI for decisions that perpetuate inequalities.
 
-## Cumprimento e sanções
-- Violações serão investigadas; ações podem incluir correção técnica, suspensão de acesso ou medidas disciplinares, conforme gravidade.
+5. **Oversight:** Maintain human oversight for decisions that affect rights, safety, or well-being.
 
-## Revisão
-- Este código deve ser revisado periodicamente para incorporar novidades legais, técnicas e feedback dos afetados.
-"""
+6. **Explainability:** Provide understandable explanations when AI makes decisions that impact people.
+
+7. **Security:** Test systems to prevent failures and attacks; update and fix vulnerabilities.
+
+8. **Prohibition of malicious use:** Do not create or distribute deepfakes, disinformation, election manipulation, or any deceptive use.
+
+9. **Intellectual property:** Respect copyright and attribute sources when applicable.
+
+10. **Impact and sustainability:** Consider social and environmental consequences; minimize negative impact.
+
+## Procedure when identifying harm or risk
+- Pause the affected system when Possible.
+
+- Record evidence and immediately report it to those responsible.
+
+- Offer support to affected individuals and implement corrections and mitigation measures.
+
+- Review processes to prevent recurrence.
+
+## User and Developer Responsibilities
+- **Users:** Use AI tools as directed, report issues, and respect privacy boundaries.
+
+- **Developers/Operators:** Ensure testing, bias mitigation, access controls, continuous monitoring, and documentation of system decisions.
+
+## Reporting and Appeal Mechanism
+- Provide a clear channel for complaints and requests for human review of automated decisions.
+
+- Ensure a timeframe and procedure for response and correction.
+
+## Compliance and Sanctions
+- Violations will be investigated; actions may include technical correction, suspension of access, or disciplinary measures, depending on severity.
+
+## Review
+- This code should be reviewed periodically to incorporate new legal and technical developments and feedback from those affected.
+
+""
 
 _PLAINTEXT = f"""{_TITLE}
 
-Objetivo
-Promover o uso seguro, ético e transparente de sistemas de inteligência artificial (IA), protegendo a dignidade, privacidade e direitos das pessoas afetadas.
+Objective
+To promote the safe, ethical, and transparent use of artificial intelligence (AI) systems, protecting the dignity, privacy, and rights of affected individuals.
 
-Princípios fundamentais
-- Respeito à dignidade humana
-- Não causar dano
-- Transparência e honestidade
-- Responsabilidade humana
-- Justiça e não discriminação
+Fundamental Principles
+- Respect for human dignity
+- Do no harm
+- Transparency and honesty
+- Human responsibility
+- Justice and non-discrimination
 
-Regras essenciais (resumo)
-1. Identificação: Sempre deixe claro quando algo foi gerado ou decidido por IA.
-2. Consentimento: Colete e use dados pessoais somente com objetivo legítimo e consentimento informado.
-3. Privacidade: Minimize dados, proteja-os e cumpra leis de proteção de dados.
-4. Não discriminar: Teste e mitigue vieses; não use IA para decisões que perpetuem desigualdades.
-5. Supervisão: Mantenha supervisão humana para decisões que afetem direitos, segurança ou bem‑estar.
-6. Explicabilidade: Forneça explicações compreensíveis quando a IA produzir decisões que impactem pessoas.
-7. Segurança: Teste sistemas para evitar falhas e ataques; atualize e corrija vulnerabilidades.
-8. Proibição de uso malicioso: Não criar ou distribuir deepfakes, desinformação, manipulação eleitoral ou qualquer uso enganoso.
-9. Propriedade intelectual: Respeite direitos autorais e atribua fontes quando aplicável.
-10. Impacto e sustentabilidade: Considere consequências sociais e ambientais; minimize impacto negativo.
+Essential Rules (summary)
+1. Identification: Always make it clear when something was generated or decided by AI.
+2. Consent: Collect and use personal data only for legitimate purposes and with informed consent.
+3. Privacy: Minimize data, protect it, and comply with data protection laws.
+4. Non-discrimination: Test and mitigate biases; do not use AI for decisions that perpetuate inequalities.
+5. Oversight: Maintain human oversight for decisions that affect rights, safety, or well-being.
+6. Explainability: Provide understandable explanations when AI produces decisions that impact people.
+7. Safety: Test systems to prevent failures and Attacks; update and fix vulnerabilities.
+8. Prohibition of malicious use: Do not create or distribute deepfakes, disinformation, election manipulation, or any deceptive use.
+9. Intellectual property: Respect copyright and attribute sources when applicable.
+10. Impact and sustainability: Consider social and environmental consequences; minimize negative impact.
 
-Procedimento ao identificar dano ou risco
-- Pausar o sistema afetado quando possível.
-- Registrar evidências e comunicar imediatamente aos responsáveis.
-- Oferecer apoio às pessoas prejudicadas e executar correções e mitigação.
-- Revisar processos para evitar recorrência.
+Procedure when identifying harm or risk 
+- Pause the affected system when possible.
 
-Responsabilidades dos usuários e desenvolvedores
-- Usuários: Usar ferramentas de IA conforme indicado, reportar problemas e respeitar limites de privacidade.
-- Desenvolvedores/Operadores: Garantir testes, mitigação de vieses, controles de acesso, monitoramento contínuo e documentação das decisões do sistema.
+- Record evidence and immediately report it to those responsible.
 
-Mecanismo de denúncia e recurso
-- Disponibilizar canal claro para reclamações e solicitações de revisão humana de decisões automatizadas.
-- Garantir prazo e procedimento para resposta e correção.
+- Offer support to affected individuals and implement corrections and mitigation measures.
 
-Cumprimento e sanções
-- Violações serão investigadas; ações podem incluir correção técnica, suspensão de acesso ou medidas disciplinares, conforme gravidade.
+- Review processes to prevent recurrence.
 
-Revisão
-- Este código deve ser revisado periodicamente para incorporar novidades legais, técnicas e feedback dos afetados.
-"""
+User and Developer Responsibilities
+- Users: Use AI tools as directed, report issues, and respect privacy boundaries.
+
+- Developers/Operators: Ensure testing, bias mitigation, access controls, continuous monitoring, and documentation of system decisions.
+
+Reporting and Appeal Mechanism
+- Provide a clear channel for complaints and requests for human review of automated decisions.
+
+- Ensure a timeframe and procedure for response and correction.
+
+Compliance and Sanctions
+- Violations will be investigated; actions may include technical correction, suspension of access, or disciplinary measures, depending on severity.
+
+Review
+- This code should be reviewed periodically to incorporate new legal and technical developments and feedback from those affected.
+
+""
 
 # ---------------------------------------------------------------------------
-# Funções utilitárias
-# ---------------------------------------------------------------------------
+# Utility Functions
+ # ---------------------------------------------------------------------------
 
 def get_markdown() -> str:
-    """Retorna o texto do código de conduta em Markdown."""
-    return _MARKDOWN
+
+""Returns the code of conduct text in Markdown."""
+
+return _MARKDOWN
 
 def get_plaintext() -> str:
-    """Retorna o texto do código de conduta em plain text."""
-    return _PLAINTEXT
+
+""Returns the code of conduct text in plain text."""
+
+return _PLAINTEXT
 
 def print_to_console(fmt: str = "txt") -> None:
-    """Imprime o texto no console.
-    fmt: 'txt' ou 'md' (default 'txt')
-    """
-    if fmt == "md":
-        sys.stdout.write(get_markdown())
-    else:
-        sys.stdout.write(get_plaintext())
+
+""Prints the text to the console.
+fmt: 'txt' or 'md' (default 'txt')
+
+""
+
+if fmt == "md":
+sys.stdout.write(get_markdown())
+
+else:
+
+sys.stdout.write(get_plaintext())
 
 def save(path: Path, fmt: str = "txt", overwrite: bool = False) -> Path:
-    """Salva o código de conduta em arquivo.
-    path: caminho do arquivo de saída (Path ou str)
-    fmt: 'txt' ou 'md'
-    overwrite: sobrescrever se arquivo existir
-    Retorna o Path salvo.
-    """
-    p = Path(path)
-    if p.exists() and not overwrite:
-        raise FileExistsError(f"O arquivo já existe: {p!s}. Use overwrite=True para sobrescrever.")
-    text = get_markdown() if fmt == "md" else get_plaintext()
-    p.write_text(text, encoding="utf-8")
-    return p
+
+""Saves the code of conduct to a file.
+path: path to the output file (Path or str)
+
+fmt: 'txt' or 'md'
+overwrite: overwrite if file exists
+Returns the saved Path.
+
+""
+p = Path(path)
+if p.exists() and not overwrite:
+raise FileExistsError(f"The file already exists: {p!s}. Use overwrite=True to overwrite.")
+
+text = get_markdown() if fmt == "md" else get_plaintext()
+
+p.write_text(text, encoding="utf-8")
+
+return p
 
 def try_export_pdf(path: Path, fmt: str = "md") -> Optional[Path]:
-    """
-    Tenta exportar o conteúdo como PDF usando fpdf (simples) se disponível.
-    Não é obrigatório; se a biblioteca não existir, informa ao usuário como instalar.
-    Retorna o caminho do PDF criado, ou None se a exportação falhar.
-    """
-    try:
-        from fpdf import FPDF
-    except Exception:
+
+""
+Attempts to export the content as a PDF using fpdf (plain) if available.
+
+Not mandatory; if the library does not exist, informs the user how to install it.
+
+Returns the path of the created PDF, or None if the export fails.
+
+""
+try:
+from fpdf import FPDF
+except Exception:
         return None
 
     text = get_markdown() if fmt == "md" else get_plaintext()
@@ -170,54 +213,70 @@ def try_export_pdf(path: Path, fmt: str = "md") -> Optional[Path]:
     pdf.add_page()
     pdf.set_font("Arial", size=12)
     for line in text.splitlines():
-        # FPDF não lida bem com linhas muito longas — quebra manual simples:
+        # FPDF doesn't handle very long lines well — simple manual wrapping:
         pdf.multi_cell(0, 7, line)
-    pdf_path = path.with_suffix(".pdf")
+     pdf_path = path.with_suffix(".pdf")
     pdf.output(str(pdf_path))
     return pdf_path
 
 # ---------------------------------------------------------------------------
-# Interface de linha de comando
+
+# Command-line interface
 # ---------------------------------------------------------------------------
 
 def _build_parser() -> argparse.ArgumentParser:
-    p = argparse.ArgumentParser(
-        description="Gera/Imprime o Código de Conduta — Uso Responsável de Inteligência Artificial"
-    )
-    p.add_argument(
-        "--format", "-f",
-        choices=("txt", "md"),
-        default="txt",
-        help="Formato de saída: 'txt' (plain text) ou 'md' (Markdown). Padrão: txt."
-    )
-    p.add_argument(
-        "--output", "-o",
-        help="Caminho para salvar o arquivo (opcional). Ex: codigo.md"
-    )
-    p.add_argument(
-        "--print", "-p",
-        action="store_true",
-        help="Imprime o conteúdo no console."
-    )
-    p.add_argument(
-        "--pdf",
-        action="store_true",
-        help="Tenta também exportar como PDF (requer 'fpdf' instalado)."
-    )
-    p.add_argument(
-        "--overwrite",
-        action="store_true",
-        help="Sobrescrever arquivo de saída se já existir."
-    )
-    return p
+
+p = argparse.ArgumentParser(
+description="Generates/Prints the Code of Conduct — Responsible Use of Artificial Intelligence"
+
+)
+
+p.add_argument(
+"--format", "-f",
+choices=("txt", "md"),
+default="txt",
+help="Output format: 'txt' (plain text) or 'md' (Markdown). Default: txt."
+
+)
+
+p.add_argument(
+"--output", "-o",
+help="Path to save the file (optional). Ex: code.md"
+
+)
+
+p.add_argument(
+"--print", "-p",
+action="store_true",
+help="Prints the content in console."
+
+)
+p.add_argument(
+"--pdf",
+action="store_true",
+help="Also try exporting as PDF (requires 'fpdf' installed)."
+
+)
+p.add_argument(
+"--overwrite",
+action="store_true",
+help="Overwrite output file if it already exists."
+
+)
+
+return p
 
 def main(argv=None) -> int:
-    parser = _build_parser()
-    args = parser.parse_args(argv)
 
-    if args.print or not args.output:
-        # Se o usuário não especificou output, imprimimos por padrão para facilitar uso.
-        print_to_console(fmt=args.format)
+parser = _build_parser()
+
+args = parser.parse_args(argv)
+
+if args.print or not args.output:
+
+# If the user did not specify output, we print by default for ease of use.
+
+print_to_console(fmt=args.format)
         if not args.output:
             return 0
 
@@ -225,14 +284,14 @@ def main(argv=None) -> int:
         out_path = Path(args.output)
         try:
             saved = save(out_path, fmt=args.format, overwrite=args.overwrite)
-            print(f"\nArquivo salvo em: {saved}")
+            print(f"\nFile saved in: {saved}")
         except FileExistsError as e:
-            print(f"Erro: {e}", file=sys.stderr)
+            print(f"Error: {e}", file=sys.stderr)
             return 2
         except Exception as e:
-            print(f"Falha ao salvar arquivo: {e}", file=sys.stderr)
+            print(f"Failed to save file: {e}", file=sys.stderr)
             return 3
-
+ 
         if args.pdf:
             pdf_path = try_export_pdf(saved, fmt=args.format)
             if pdf_path:
