@@ -26,7 +26,7 @@ from pathlib import Path
 from typing import Optional
 
 # ---------------------------------------------------------------------------
-# Code of Conduct Content (in Portuguese)
+# Code of Conduct Content
 # ---------------------------------------------------------------------------
 
 _TITLE = "Code of Conduct — Responsible Use of Artificial Intelligence"
